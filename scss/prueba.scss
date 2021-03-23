@@ -1,0 +1,262 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@mixin margenes ($margin, $padding){
+   margin: $margin;
+   padding: $padding;
+}
+
+@mixin sizes ($width, $height) {
+   width: $width;
+   height: $height;
+}
+
+header {
+    @include sizes (220px, 110px);
+    @include margenes( 25px,30px );
+    
+   display: inline;
+    .titulo {
+      margin-top: 20px;
+        text-transform: uppercase;
+        border: solid 1px black;
+        display: inline-block;
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(206, 255, 255);
+        animation-name:titulo;
+        animation-iteration-count: 2;
+        animation-timing-function: ease-in-out;
+        animation-duration: 5s;
+        animation-delay: 0s;
+        
+     }
+     .header--one{
+      @include margenes( 25px,30px );
+         font-weight: 400;
+         font-size: 15px;
+         background-image:linear-gradient(to right,rgb(245, 220, 250), pink);
+         display: block;
+       
+         
+
+         a:hover {
+            text-decoration: none;
+         }
+    }
+     
+}
+
+#body {
+   
+   font-family: 'Roboto Mono', monospace;
+   background-color: rgb(250, 196, 152);
+   footer{
+     @include margenes(5px,5px )
+    display: block;
+    background-color: rgb(177, 177, 177);
+    width: 1910px;
+   
+ }
+}
+
+
+
+main { 
+h1  {
+
+    font-family:sans-serif ;
+    text-align: center;
+
+    background-image:linear-gradient(to right,rgb(250, 214, 239), rgb(253, 169, 183));
+    color: rgb(39, 26, 26);
+}
+
+
+.formulario {
+   @include margenes(20px, 20px );
+   display: block;
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: 100px;
+    background-repeat:round;
+    text-align: center;
+    text-decoration: solid black 2px;
+    color: #000000  ;
+    letter-spacing: 3px;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: sans-serif;
+    .select_option   {
+        font-size: 30px;
+        color: burlywood;
+     }
+     
+ }
+
+}
+
+
+
+/*inicio*/
+
+
+
+
+
+
+.parrafo1 {
+   display: inline;
+   article {
+   @include margenes(20px,30px)
+   display: inline-block;
+   font-size: 20px;
+   background-image:linear-gradient(to right,rgb(243, 199, 170), pink);
+   width: 600px;
+   height: 250px;
+   font-family: Arial, Helvetica, sans-serif;
+   }
+}
+
+
+
+   
+
+
+.parrafo2 {
+   display: inline;
+      article {
+         display: inline-block;
+      margin: 20px;
+      letter-spacing: 0.1rem;
+      font-size: 20px;
+      background-image:linear-gradient(to right,rgb(243, 199, 170), pink);
+      width: 600px;
+      height: 250px;
+      padding: 30px;
+      p { font-family: Arial, Helvetica, sans-serif;}
+   }
+}
+.panqueques--tabla {
+  display: inline-block;
+  background-color: aqua;
+
+  table{ 
+   border: 1px solid black;
+     @include margenes(50px,50px );
+     text-align: center;
+     line-height: 35px;
+     font-weight: 700;
+     font-size: 15px;
+     background-color: rgb(107, 76, 63);
+     background-size: 400px;
+    td {
+       border: solid 1px black;
+    }
+      .pintegrales {
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+        font-weight: bold;
+     
+   }
+      }
+ }
+ 
+
+
+/*recetas agridulces*/
+.imagen {
+   text-align: center;
+}
+.agridulce--p {
+   @include margenes(20px,10px );
+   font-size: 16px;
+   text-align: center;
+   display: block;
+   border: 1px solid black ;
+   background-image: linear-gradient(to right, rgb(236, 179, 179), rgb(240, 121, 121));
+
+}
+
+/*recetas dulces*/
+
+.pastel {
+   display: grid;
+   list-style: none;
+   grid-template-rows:  30px 30px 30px 30px 30px 30px 30px 30px 30px  30px 30px 30px;
+   display: flex;
+   height: 500px;
+   flex-direction: column;
+   padding: 60px;
+   margin: 60px;
+   flex-wrap: nowrap;
+   background-image:linear-gradient(to right,rgb(245, 245, 236), pink);
+   h2 {background-color: aquamarine;}
+   ul {
+       background-color: burlywood;
+       height: 100em;
+       width: 100em;
+    li {
+        display: block;
+        width: 25%;
+        position:relative;
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        justify-content:center;
+     }
+     
+   }
+}
+
+
+/*fin de recetas dulces*/
+
+
+/*recetas especiales*/
+
+.pandulce {
+   display: grid;
+   grid-template-rows: 100px;
+   border: 2px solid black;
+   background-image: linear-gradient(to right, cyan, rgb(53, 53, 230));
+   margin: 20px;
+   padding: 10px;
+   h2 {
+       height: 10em;
+       width: 10em;
+   }
+   ol {
+       color: black;
+       font-size: 15px;
+       font-weight: 400;
+   }
+}
+/*recetas saladas*/
+
+.articulo{
+   @extend .parrafo2;
+    text-align: center;
+    padding: 15px;
+    article{
+    background-color: aquamarine;
+    p{font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;}
+}
+}
+
+
+@keyframes titulo {
+0% {width: 12%;}
+10% {width: 20%;}
+20% {width: 40%;}
+30% {width: 60%;}
+40% {width: 75%;}
+50% {width: 85%;}
+60% {width: 75%;}
+70% {width: 60%;}
+80% {width: 40%;}
+90% {width: 20%;}
+100% {width: 12%;}
+}

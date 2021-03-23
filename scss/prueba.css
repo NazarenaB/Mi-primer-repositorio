@@ -1,0 +1,327 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 220px;
+  height: 110px;
+  margin: 25px;
+  padding: 30px;
+  display: inline;
+}
+
+header .titulo {
+  margin-top: 20px;
+  text-transform: uppercase;
+  border: solid 1px black;
+  display: inline-block;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ceffff;
+  -webkit-animation-name: titulo;
+          animation-name: titulo;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+header .header--one {
+  margin: 25px;
+  padding: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f5dcfa), to(pink));
+  background-image: linear-gradient(to right, #f5dcfa, pink);
+  display: block;
+}
+
+header .header--one a:hover {
+  text-decoration: none;
+}
+
+#body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #fac498;
+}
+
+#body footer {
+  margin: 5px;
+  padding: 5px;
+  display: block;
+  background-color: #b1b1b1;
+  width: 1910px;
+}
+
+main h1 {
+  font-family: sans-serif;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fad6ef), to(#fda9b7));
+  background-image: linear-gradient(to right, #fad6ef, #fda9b7);
+  color: #271a1a;
+}
+
+main .formulario {
+  margin: 20px;
+  padding: 20px;
+  display: block;
+  background-image: url(../imagenes/fondo.jpg);
+  background-size: 100px;
+  background-repeat: round;
+  text-align: center;
+  -webkit-text-decoration: solid black 2px;
+          text-decoration: solid black 2px;
+  color: #000000;
+  letter-spacing: 3px;
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+
+main .formulario .select_option {
+  font-size: 30px;
+  color: burlywood;
+}
+
+/*inicio*/
+.parrafo1 {
+  display: inline;
+}
+
+.parrafo1 article {
+  margin: 20px;
+  padding: 30px;
+  display: inline-block;
+  font-size: 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f3c7aa), to(pink));
+  background-image: linear-gradient(to right, #f3c7aa, pink);
+  width: 600px;
+  height: 250px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.parrafo2, .articulo {
+  display: inline;
+}
+
+.parrafo2 article, .articulo article {
+  display: inline-block;
+  margin: 20px;
+  letter-spacing: 0.1rem;
+  font-size: 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f3c7aa), to(pink));
+  background-image: linear-gradient(to right, #f3c7aa, pink);
+  width: 600px;
+  height: 250px;
+  padding: 30px;
+}
+
+.parrafo2 article p, .articulo article p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.panqueques--tabla {
+  display: inline-block;
+  background-color: aqua;
+}
+
+.panqueques--tabla table {
+  border: 1px solid black;
+  margin: 50px;
+  padding: 50px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #6b4c3f;
+  background-size: 400px;
+}
+
+.panqueques--tabla table td {
+  border: solid 1px black;
+}
+
+.panqueques--tabla table .pintegrales {
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  font-weight: bold;
+}
+
+/*recetas agridulces*/
+.imagen {
+  text-align: center;
+}
+
+.agridulce--p {
+  margin: 20px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  border: 1px solid black;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ecb3b3), to(#f07979));
+  background-image: linear-gradient(to right, #ecb3b3, #f07979);
+}
+
+/*recetas dulces*/
+.pastel {
+  display: -ms-grid;
+  display: grid;
+  list-style: none;
+  -ms-grid-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px  30px 30px 30px;
+      grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px  30px 30px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 60px;
+  margin: 60px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f5f5ec), to(pink));
+  background-image: linear-gradient(to right, #f5f5ec, pink);
+}
+
+.pastel h2 {
+  background-color: aquamarine;
+}
+
+.pastel ul {
+  background-color: burlywood;
+  height: 100em;
+  width: 100em;
+}
+
+.pastel ul li {
+  display: block;
+  width: 25%;
+  position: relative;
+  font-size: 15px;
+  color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*fin de recetas dulces*/
+/*recetas especiales*/
+.pandulce {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100px;
+      grid-template-rows: 100px;
+  border: 2px solid black;
+  background-image: -webkit-gradient(linear, left top, right top, from(cyan), to(#3535e6));
+  background-image: linear-gradient(to right, cyan, #3535e6);
+  margin: 20px;
+  padding: 10px;
+}
+
+.pandulce h2 {
+  height: 10em;
+  width: 10em;
+}
+
+.pandulce ol {
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/*recetas saladas*/
+.articulo {
+  text-align: center;
+  padding: 15px;
+}
+
+.articulo article {
+  background-color: aquamarine;
+}
+
+.articulo article p {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@-webkit-keyframes titulo {
+  0% {
+    width: 12%;
+  }
+  10% {
+    width: 20%;
+  }
+  20% {
+    width: 40%;
+  }
+  30% {
+    width: 60%;
+  }
+  40% {
+    width: 75%;
+  }
+  50% {
+    width: 85%;
+  }
+  60% {
+    width: 75%;
+  }
+  70% {
+    width: 60%;
+  }
+  80% {
+    width: 40%;
+  }
+  90% {
+    width: 20%;
+  }
+  100% {
+    width: 12%;
+  }
+}
+
+@keyframes titulo {
+  0% {
+    width: 12%;
+  }
+  10% {
+    width: 20%;
+  }
+  20% {
+    width: 40%;
+  }
+  30% {
+    width: 60%;
+  }
+  40% {
+    width: 75%;
+  }
+  50% {
+    width: 85%;
+  }
+  60% {
+    width: 75%;
+  }
+  70% {
+    width: 60%;
+  }
+  80% {
+    width: 40%;
+  }
+  90% {
+    width: 20%;
+  }
+  100% {
+    width: 12%;
+  }
+}
+/*# sourceMappingURL=prueba.css.map */
