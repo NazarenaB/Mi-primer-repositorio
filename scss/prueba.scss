@@ -62,7 +62,7 @@ header {
    font-family: 'Roboto Mono', monospace;
    background-color: rgb(250, 196, 152);
    footer{
-     @include margenes(5px,5px )
+     @include margenes(5px, 5px, 5px, 5px, 5px, 5px, 5px, 5px )
     display: block;
     background-color: rgb(177, 177, 177);
     width: 1898px;
@@ -84,7 +84,7 @@ h1  {
 
 
 .formulario {
-   @include margenes(20px, 20px );
+   @include margenes(20px, 20px, 20px, 20px, 30px, 30px, 20px, 20px );
    display: block;
     background-image: url(../imagenes/fondo.jpg);
     background-size: 100px;
@@ -118,7 +118,7 @@ h1  {
 .parrafo1 {
    display: inline;
    article {
-   @include margenes(20px,30px)
+   @include margenes(20px, 20px, 10px, 10px, 20px, 20px, 10px, 10px)
    display: inline-block;
    font-size: 20px;
    background-image:linear-gradient(to right,rgb(243, 199, 170), pink);
@@ -153,7 +153,7 @@ h1  {
 
   table{ 
    border: 1px solid black;
-     @include margenes(50px,50px );
+     @include margenes(20px, 20px, 10px, 10px, 20px, 20px, 10px, 10px );
      text-align: center;
      line-height: 35px;
      font-weight: 700;
@@ -179,7 +179,7 @@ h1  {
    text-align: center;
 }
 .agridulce--p {
-   @include margenes(20px,10px );
+   @include margenes(20px, 20px, 20px, 20px, 15px, 15px, 10px, 10px);
    font-size: 16px;
    text-align: center;
    display: block;
@@ -191,14 +191,13 @@ h1  {
 /*recetas dulces*/
 
 .pastel {
+   @include margenes( 40px, 40px, 50px, 50px, 30px, 30px, 30px, 30px);
    display: grid;
    list-style: none;
    grid-template-rows:  30px 30px 30px 30px 30px 30px 30px 30px 30px  30px 30px 30px;
    display: flex;
    height: 500px;
    flex-direction: column;
-   padding: 60px;
-   margin: 60px;
    flex-wrap: nowrap;
    background-image:linear-gradient(to right,rgb(245, 245, 236), pink);
    h2 {background-color: aquamarine;}

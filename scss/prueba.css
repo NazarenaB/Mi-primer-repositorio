@@ -6,8 +6,14 @@
 header {
   width: 220px;
   height: 110px;
-  margin: 25px;
-  padding: 30px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: inline;
 }
 
@@ -32,8 +38,14 @@ header .titulo {
 }
 
 header .header--one {
-  margin: 25px;
-  padding: 30px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-weight: 400;
   font-size: 15px;
   background-image: -webkit-gradient(linear, left top, right top, from(#f5dcfa), to(pink));
@@ -51,8 +63,14 @@ header .header--one a:hover {
 }
 
 #body footer {
-  margin: 5px;
-  padding: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   display: block;
   background-color: #b1b1b1;
   width: 1898px;
@@ -67,8 +85,14 @@ main h1 {
 }
 
 main .formulario {
-  margin: 20px;
-  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: block;
   background-image: url(../imagenes/fondo.jpg);
   background-size: 100px;
@@ -95,8 +119,14 @@ main .formulario .select_option {
 }
 
 .parrafo1 article {
-  margin: 20px;
-  padding: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: inline-block;
   font-size: 20px;
   background-image: -webkit-gradient(linear, left top, right top, from(#f3c7aa), to(pink));
@@ -133,8 +163,14 @@ main .formulario .select_option {
 
 .panqueques--tabla table {
   border: 1px solid black;
-  margin: 50px;
-  padding: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
   line-height: 35px;
   font-weight: 700;
@@ -159,8 +195,14 @@ main .formulario .select_option {
 }
 
 .agridulce--p {
-  margin: 20px;
-  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 16px;
   text-align: center;
   display: block;
@@ -171,6 +213,14 @@ main .formulario .select_option {
 
 /*recetas dulces*/
 .pastel {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   display: -ms-grid;
   display: grid;
   list-style: none;
@@ -184,8 +234,6 @@ main .formulario .select_option {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 60px;
-  margin: 60px;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   background-image: -webkit-gradient(linear, left top, right top, from(#f5f5ec), to(pink));
