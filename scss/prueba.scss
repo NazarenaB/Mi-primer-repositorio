@@ -3,9 +3,17 @@
     padding: 0px;
 }
 
-@mixin margenes ($margin, $padding){
-   margin: $margin;
-   padding: $padding;
+@mixin margenes ($margin-bottom, $margin-top, $margin-left, 
+$margin-right, $padding-bottom,
+$padding-top, $padding-left, $padding-right){
+   margin-bottom: $margin-bottom;
+   margin-top:$margin-top ;
+   margin-left: $margin-left;
+   margin-right: $margin-right;
+   padding-bottom: $padding-bottom;
+   padding-top: $padding-top;
+   padding-left: $padding-left;
+   padding-right: $padding-right;
 }
 
 @mixin sizes ($width, $height) {
@@ -15,7 +23,7 @@
 
 header {
     @include sizes (220px, 110px);
-    @include margenes( 25px,30px );
+    @include margenes( 25px, 25px, 20px, 20px, 30px, 30px, 20px, 20px );
     
    display: inline;
     .titulo {
@@ -34,7 +42,7 @@ header {
         
      }
      .header--one{
-      @include margenes( 25px,30px );
+      @include margenes( 25px, 25px, 20px, 20px, 30px, 30px, 20px, 20px );
          font-weight: 400;
          font-size: 15px;
          background-image:linear-gradient(to right,rgb(245, 220, 250), pink);
@@ -57,7 +65,7 @@ header {
      @include margenes(5px,5px )
     display: block;
     background-color: rgb(177, 177, 177);
-    width: 1910px;
+    width: 1898px;
    
  }
 }
