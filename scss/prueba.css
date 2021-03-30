@@ -46,14 +46,14 @@ header .header--one {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 15px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#f5dcfa), to(pink));
-  background-image: linear-gradient(to right, #f5dcfa, pink);
+  background-image: url(../imagenes/fondo2.jpg);
   display: block;
 }
 
 header .header--one a:hover {
+  display: inline;
   text-decoration: none;
 }
 
@@ -128,7 +128,7 @@ main .formulario .select_option {
   padding-left: 10px;
   padding-right: 10px;
   display: inline-block;
-  font-size: 20px;
+  font-size: 15px;
   background-image: -webkit-gradient(linear, left top, right top, from(#f3c7aa), to(pink));
   background-image: linear-gradient(to right, #f3c7aa, pink);
   width: 600px;
@@ -144,7 +144,7 @@ main .formulario .select_option {
   display: inline-block;
   margin: 20px;
   letter-spacing: 0.1rem;
-  font-size: 20px;
+  font-size: 15px;
   background-image: -webkit-gradient(linear, left top, right top, from(#f3c7aa), to(pink));
   background-image: linear-gradient(to right, #f3c7aa, pink);
   width: 600px;
@@ -157,11 +157,11 @@ main .formulario .select_option {
 }
 
 .panqueques--tabla {
-  display: inline-block;
   background-color: aqua;
 }
 
 .panqueques--tabla table {
+  display: inline-block;
   border: 1px solid black;
   margin-bottom: 20px;
   margin-top: 20px;

@@ -43,14 +43,16 @@ header {
      }
      .header--one{
       @include margenes( 25px, 25px, 20px, 20px, 30px, 30px, 20px, 20px );
-         font-weight: 400;
+         font-weight: 700;
          font-size: 15px;
-         background-image:linear-gradient(to right,rgb(245, 220, 250), pink);
-         display: block;
+         background-image: url(../imagenes/fondo2.jpg);
+         display:block;
+
        
          
 
          a:hover {
+            display: inline;
             text-decoration: none;
          }
     }
@@ -120,7 +122,7 @@ h1  {
    article {
    @include margenes(20px, 20px, 10px, 10px, 20px, 20px, 10px, 10px)
    display: inline-block;
-   font-size: 20px;
+   font-size: 15px;
    background-image:linear-gradient(to right,rgb(243, 199, 170), pink);
    width: 600px;
    height: 250px;
@@ -139,7 +141,7 @@ h1  {
          display: inline-block;
       margin: 20px;
       letter-spacing: 0.1rem;
-      font-size: 20px;
+      font-size: 15px;
       background-image:linear-gradient(to right,rgb(243, 199, 170), pink);
       width: 600px;
       height: 250px;
@@ -148,10 +150,11 @@ h1  {
    }
 }
 .panqueques--tabla {
-  display: inline-block;
+  
   background-color: aqua;
 
   table{ 
+     display: inline-block;
    border: 1px solid black;
      @include margenes(20px, 20px, 10px, 10px, 20px, 20px, 10px, 10px );
      text-align: center;
